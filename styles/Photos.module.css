@@ -1,0 +1,53 @@
+.photoCover{
+    position: relative;
+    padding: 0 10% 0 10%;
+}
+
+.photoHeader{
+    color:  #8d5507;
+    font-family: 'Fredoka One';
+    font-size: 12px;
+}
+
+.images{
+    width: 100%;
+    height: 20vh;
+    border-radius: 3px;
+    margin: 4% 0 0 0;
+    /* background-color: lightgreen; */
+}
+
+.photoGrid{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    padding: 2% 0 0 0;
+}
+
+.photoContainer{
+    margin: 1% 1% 3% 0;
+}
+
+.photoContainer img{
+    border-radius: 10px;
+    width: 100%;
+    height: 140px;
+}
+
+.photoGrid{
+    overflow-y: scroll;
+    height: 85vh
+}
+
+.photoGrid::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .photoGrid::-webkit-scrollbar-track {
+    background: white;
+  }
+
+.photoGrid::-webkit-scrollbar-thumb {
+    background: #f7d9af;
+    border-radius: 50px;
+  }
