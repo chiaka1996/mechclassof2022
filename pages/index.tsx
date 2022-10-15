@@ -162,7 +162,7 @@ const Home = ({data}:homeprops) => {
 
 export async function getServerSideProps() {
   try{
-    let response = await fetch('https://chiaka-daniel-nextjs-test-9sf201hyo-chiaka1996.vercel.app//api/getProfile')
+    let response = await fetch(`${server}/api/getProfile`)
     const data = await response.json()
     
     return{
