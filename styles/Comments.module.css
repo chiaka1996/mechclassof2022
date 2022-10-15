@@ -1,0 +1,18 @@
+.emptyComment{
+    width: 100%;
+    text-align: center;
+    /* padding: 20% auto 0 auto; */
+    font-family: 'Fredoka One';
+    letter-spacing: 1px;
+
+}
+
+.Image{
+    margin: 5% 0 0 0;
+}
+
+@media only screen and (max-width: 800px){
+    .Image{
+        margin: 15% 0 0 0;
+    }
+}

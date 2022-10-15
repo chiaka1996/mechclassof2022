@@ -1,0 +1,26 @@
+.topbarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 5% 2% 2%;
+    width: 100%;
+}
+
+.topHeader{
+    font-family: 'Fredoka One';
+    font-size: 19px;
+}
+
+.topNavImage{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .topbarContainer{
+        padding: 2% 2% 2% 2%;
+    }
+    
+    .topNavImage{
+        display: block;
+    }
+}
