@@ -54,11 +54,11 @@ const Home = ({data}:homeprops) => {
       </Head>
       <div>
       mechanical engineering
-      {/* {
+      {
        data.map((element,i) => <div key={i}>
           {element.surname}
         </div>
-      )} */}
+      )}
       </div>
     
        {/*<main className={styles.main}>
@@ -160,19 +160,19 @@ const Home = ({data}:homeprops) => {
   )
 }
 
-// export async function getServerSideProps() {
-//   try{
-//     let response = await fetch(`${server}/api/getProfile`)
-//     const data = await response.json()
+export async function getServerSideProps() {
+  try{
+    let response = await fetch('https://chiaka-daniel-nextjs-test-9sf201hyo-chiaka1996.vercel.app//api/getProfile')
+    const data = await response.json()
     
-//     return{
-//       props: {data}
-//     }
+    return{
+      props: {data}
+    }
     
-//   }
-//   catch(error:any){
-//     alert(error.message)
-//   }
-// }
+  }
+  catch(error:any){
+    alert(error.message)
+  }
+}
 
 export default Home
