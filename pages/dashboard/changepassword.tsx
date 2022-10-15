@@ -1,5 +1,5 @@
 import StudentSideBar from '../../Components/StudentSideBar';
-import mobile from '../../styles/mobileSideBar.module.css'
+import mobile from '../../Styles/mobileSideBar.module.css'
 import TopNavBar from '../../Components/TopNavbar';
 import details from '../../Styles/profile.module.css';
 import load from '../../Styles/loading.module.css'

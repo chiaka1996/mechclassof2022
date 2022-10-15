@@ -1,6 +1,6 @@
 import css from '../../../Styles/dashboard.module.css';
 import details from '../../../Styles/profile.module.css';
-import mobile from '../../../styles/mobileSideBar.module.css'
+import mobile from '../../../Styles/mobileSideBar.module.css'
 import StudentSideBar from '../../../Components/StudentSideBar';
 import load from '../../../Styles/loading.module.css'
 import spinner from '../../../Styles/spinner.module.css'

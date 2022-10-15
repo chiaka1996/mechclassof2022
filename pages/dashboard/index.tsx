@@ -1,5 +1,5 @@
 import css from '../../Styles/dashboard.module.css';
-import mobile from '../../styles/mobileSideBar.module.css'
+import mobile from '../../Styles/mobileSideBar.module.css'
 import StudentSideBar from '../../Components/StudentSideBar';
 import TopNavBar from '../../Components/TopNavbar';
 import Comments from '../../Components/Comments';

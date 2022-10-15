@@ -2,7 +2,7 @@ import {server} from '../../Config/index'
 import StudentSideBar from '../../Components/StudentSideBar';
 import VisitorSidebar from '../../Components/VisitorSidebar';
 import {userAuth} from "../../Contexts/AllContext"
-import mobile from '../../styles/mobileSideBar.module.css'
+import mobile from '../../Styles/mobileSideBar.module.css'
 import css from '../../Styles/dashboard.module.css';
 import details from '../../Styles/profile.module.css';
 import TopNavBar from '../../Components/TopNavbar';
