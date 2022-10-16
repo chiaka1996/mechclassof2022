@@ -60,6 +60,7 @@
     color: rgb(53, 53, 53);
     letter-spacing: 3px;
     font-weight: bold;
+    margin: 0 0 10% 0;
 }
 
 .bigHeader{
@@ -193,9 +194,6 @@
         display: block;
     }
 
-    .BannerHeading{
-        margin: 0 0 10% 0;
-    }
 
     .gridBannerImg{
         display: none;
@@ -205,10 +203,21 @@
         margin: 10% 0 0 0;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 380px) {
         .studentSection{
-            margin: 25% 0 0 0;
+            margin: 20% 0 0 0;
         }
+
+        .bigHeader{
+            color: #b47114;
+            font-size: 0.9em;
+        }
+
+        .BannerHeading{
+            padding: 14% 0 0 0;
+            margin: 0 0 10% 0;
+        }
+    
     }
 
 
