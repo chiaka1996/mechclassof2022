@@ -1,8 +1,8 @@
-import css from '../Styles/Photos.module.css';
+import photo from '../Styles/Photos.module.css';
 
 const Photos = () => {
     return(
-        <div className={css.photoCover}>
+        <div className={photo.photoCover}>
             <div>
             <div style={{margin: '0 0 10% 0'}}>
             <img 

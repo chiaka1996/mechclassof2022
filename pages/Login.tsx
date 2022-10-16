@@ -1,5 +1,4 @@
-import css from '../Styles/Login.module.css';
-import load from '../Styles/loading.module.css'
+import log from '../Styles/Login.module.css';
 import {useState, useEffect} from "react";
 import { useRouter } from 'next/router'
 import Link from 'next/link'
@@ -114,77 +113,77 @@ const submitBtn = async (event:React.MouseEvent<HTMLButtonElement>) => {
 }
 
     return(
-        <div className={css.loginContainer}>
+        <div className={log.loginContainer}>
         <img
         src='https://res.cloudinary.com/chiaka1996/image/upload/v1658609043/mechanical_eng_banner2_d0m51n.jpg'
         alt='background'
-        className={css.img}
+        className={log.img}
         />
-        <div className={css.errorContainer}>
+        <div className={log.errorContainer}>
            
                 { 
-                  error.length > 0 ? <div className={css.errorMessage}> 
+                  error.length > 0 ? <div className={log.errorMessage}> 
                   {error.map((err, i) =>  <div key={i}>{err}</div>)} 
                   <div 
-                    className={css.closeMessage}
+                    className={log.closeMessage}
                     onClick={clearError}
                     >
-                    <div className={css.closeLine}></div>
-                    <div className={css.closeLine2}></div>
+                    <div className={log.closeLine}></div>
+                    <div className={log.closeLine2}></div>
                     </div> 
                    </div>: ''
                 }
            
         </div>
         <div >
-        <div className={css.loginHeader}>
+        <div className={log.loginHeader}>
         <h1>MECH22</h1>
         </div>
-        <div className={css.formHouse}>
-        <form className={css.form}>
-        <div className={css.welcome}>Welcome Comrade</div>
-        <div className={css.inputContainer}>
-        <div className={css.label}>Matric No</div>
+        <div className={log.formHouse}>
+        <form className={log.form}>
+        <div className={log.welcome}>Welcome Comrade</div>
+        <div className={log.inputContainer}>
+        <div className={log.label}>Matric No</div>
         <input      
         type='text' 
         name="matric"
         value={details.matric}
         onChange={onchangeDetails}
         required
-        className={css.input}
+        className={log.input}
         />
         </div>
 
-        <div className={css.inputContainer}>
-        <div className={css.label}>Password</div>
+        <div className={log.inputContainer}>
+        <div className={log.label}>Password</div>
         <input 
         type='password'
         name="password"
         value={details.password}
         onChange={onchangeDetails}
-        className={css.input}
+        className={log.input}
         required
         />
         </div>
 
         <button 
-        className={css.submitBtn}
+        className={log.submitBtn}
         onClick={submitBtn}
         >
         {!loading ? 'Sign in' : <div>
-            <span className={load.loadingSpan}></span>
-            <span className={load.loadingSpan}></span>
-            <span className={load.loadingSpan}></span>
+            <span className='loadingSpan'></span>
+            <span className='loadingSpan'></span>
+            <span className='loadingSpan'></span>
         </div> }
         </button>
         </form> 
         </div>
         </div>
 
-        <div className={css.returnContainer}>
+        <div className={log.returnContainer}>
             <div>
                 <Link href={'/'}>
-                <span   className={css.returnHome}>return Home ?</span>
+                <span   className={log.returnHome}>return Home ?</span>
                 </Link>
                 </div>
         </div>

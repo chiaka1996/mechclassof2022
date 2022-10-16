@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import details from '../Styles/profile.module.css';
+import pagination from '../Styles/profile.module.css';
 
 interface pic{
     cloudinaryId: string,
@@ -37,44 +37,44 @@ const Pagination = ({products, totalProduct, currentPage, prev, next, link, comr
     return( 
         <div>
             {
-            link === 'photo' ? <div>{products.length < 1 ?  '': <div className={details.buttonContainer}>
+            link === 'photo' ? <div>{products.length < 1 ?  '': <div className={pagination.buttonContainer}>
             <a href={`/comrade/photos/${comradeId}?page=${hrefPrev}`}>
-            <button className={details.uncoloured}>
+            <button className={pagination.uncoloured}>
             prev
             </button>
             </a>
             {list.map((lists, i) => <a href={`/comrade/photos/${comradeId}?page=${lists}`}  key={i}>
             <button 
             value={lists}
-            className={(currentPage === lists ? details.coloured : details.uncoloured)}
+            className={(currentPage === lists ? pagination.coloured : pagination.uncoloured)}
             >
             {lists}
             </button>
             </a>
             )}
              <a href={`/comrade/photos/${comradeId}?page=${hrefNext}`}>
-            <button className={details.uncoloured}>
+            <button className={pagination.uncoloured}>
             next
             </button>
             </a>
         </div>
-        } </div> : <div>{products.length < 1 ?  '': <div className={details.buttonContainer}>
+        } </div> : <div>{products.length < 1 ?  '': <div className={pagination.buttonContainer}>
         <a href={'/dashboard/mygallery/' + hrefPrev}>
-        <button className={details.uncoloured}>
+        <button className={pagination.uncoloured}>
         prev
         </button>
         </a>
         {list.map((lists, i) => <a href={'/dashboard/mygallery/' + lists}  key={i}>
         <button 
         value={lists}
-        className={(currentPage === lists ? details.coloured : details.uncoloured)}
+        className={(currentPage === lists ? pagination.coloured : pagination.uncoloured)}
         >
         {lists}
         </button>
         </a>
         )}
          <a href={'/dashboard/mygallery/' + hrefNext}>
-        <button className={details.uncoloured}>
+        <button className={pagination.uncoloured}>
         next
         </button>
         </a>

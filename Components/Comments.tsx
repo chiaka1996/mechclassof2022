@@ -1,15 +1,15 @@
-import css from '../Styles/Comments.module.css';
+import comment from '../Styles/Comments.module.css';
 
 const Comment = () => {
     return(
-        <div className={css.commentCover}>
+        <div className={comment.commentCover}>
             {/* <div className={css.commentHeader}>Comments</div> */}
-            <div className={css.emptyComment}>
-            <div className={css.commentImage}>
+            <div className={comment.emptyComment}>
+            <div className={comment.commentImage}>
             <img 
             src="https://img.icons8.com/officel/110/000000/surprised.png"
             alt='empty comment'
-            className={css.Image}
+            className={comment.Image}
             />
             </div>
             <div>COMRADE!!!<br/>

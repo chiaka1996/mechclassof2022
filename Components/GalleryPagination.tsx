@@ -1,4 +1,4 @@
-import details from '../Styles/profile.module.css';
+import paginate from '../Styles/profile.module.css';
 
 interface pic{
     cloudinaryId: string,
@@ -36,23 +36,23 @@ const GalleryPagination = ({products, totalProduct, currentPage, prev, next, lin
     return( 
         <div>
              <div>
-            {products.length < 1 ?  '': <div className={details.buttonContainer}>
+            {products.length < 1 ?  '': <div className={paginate.buttonContainer}>
             <a href={'/pictures/' + hrefPrev}>
-            <button className={details.uncoloured}>
+            <button className={paginate.uncoloured}>
             prev
             </button>
             </a>
             {list.map((lists, i) => <a href={'/pictures/' + lists}  key={i}>
             <button 
             value={lists}
-            className={(currentPage === lists ? details.coloured : details.uncoloured)}
+            className={(currentPage === lists ? paginate.coloured : paginate.uncoloured)}
             >
             {lists}
             </button>
             </a>
             )}
              <a href={'/pictures/' + hrefNext}>
-            <button className={details.uncoloured}>
+            <button className={paginate.uncoloured}>
             next
             </button>
             </a>

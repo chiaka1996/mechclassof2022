@@ -1,4 +1,4 @@
-import css from '../Styles/sidebar.module.css';
+import side from '../Styles/sidebar.module.css';
 import Link from 'next/link';
 import {userAuth} from "../Contexts/AllContext"
 
@@ -11,9 +11,8 @@ const VisitorSideBar = ({name}:props) => {
     const space = ' '
 
     return(
-    <div className={css.visitorContainer}>
-    
-    <div className={css.mobileSidebarCancel} onClick={closeBar}>
+    <div className={side.visitorContainer}>
+    <div className={side.mobileSidebarCancel} onClick={closeBar}>
     <img 
     src="https://img.icons8.com/external-becris-lineal-becris/25/000000/external-cancel-mintab-for-ios-becris-lineal-becris.png"
     alt="cancel mobile sidebar"
@@ -24,7 +23,7 @@ const VisitorSideBar = ({name}:props) => {
     href='/'
     >
     <div 
-    className={name === 'home' ? css.coloredBackground:css.sidebarList}
+    className={name === 'home' ? side.coloredBackground:side.sidebarList}
     onClick={closeBar}
     >
     <div>
@@ -33,7 +32,7 @@ const VisitorSideBar = ({name}:props) => {
     alt='home icon'
     />
     </div>
-    <div className={css.listspan}>Home</div>
+    <div className={side.listspan}>Home</div>
     </div>
     </Link>
     
@@ -41,7 +40,7 @@ const VisitorSideBar = ({name}:props) => {
     href='/dashboard/mygallery/1'
     >
     <div 
-    className={name === 'Gallery' ? css.coloredBackground:css.sidebarList}
+    className={name === 'Gallery' ? side.coloredBackground:side.sidebarList}
     onClick={closeBar}
     >
     <div>
@@ -50,7 +49,7 @@ const VisitorSideBar = ({name}:props) => {
     alt='gallery icon'
     />
     </div>
-    <div className={css.listspan}>
+    <div className={side.listspan}>
     Gallery 
     </div>
     </div> 
