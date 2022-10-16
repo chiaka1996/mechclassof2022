@@ -1,4 +1,4 @@
-import indexcss from '../../Styles/dashboard.module.css';
+import indexcss from '../../styles/dashboard.module.css';
 import indexmobile from '../../styles/mobileSideBar.module.css'
 import StudentSideBar from '../../Components/StudentSideBar';
 import TopNavBar from '../../Components/TopNavbar';

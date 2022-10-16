@@ -1,8 +1,8 @@
-import dashboardcss from '../../../Styles/dashboard.module.css';
-import profiledetails from '../../../Styles/profile.module.css';
+import dashboardcss from '../../../styles/dashboard.module.css';
+import profiledetails from '../../../styles/profile.module.css';
 import mobilecss from '../../../styles/mobileSideBar.module.css'
 import StudentSideBar from '../../../Components/StudentSideBar';
-import spinner from '../../../Styles/spinner.module.css'
+import spinner from '../../../styles/spinner.module.css'
 import TopNavBar from '../../../Components/TopNavbar';
 import {useState, useEffect } from "react";
 import {server} from '../../../Config/index'

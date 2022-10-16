@@ -1,6 +1,6 @@
-import profilecss from '../../Styles/dashboard.module.css';
+import profilecss from '../../styles/dashboard.module.css';
 import profilemobile from '../../styles/mobileSideBar.module.css'
-import profiledetails from '../../Styles/profile.module.css';
+import profiledetails from '../../styles/profile.module.css';
 import StudentSideBar from '../../Components/StudentSideBar';
 import TopNavBar from '../../Components/TopNavbar';
 import {useState, useEffect, useRef} from "react";

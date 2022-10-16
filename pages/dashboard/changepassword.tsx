@@ -1,9 +1,9 @@
 import StudentSideBar from '../../Components/StudentSideBar';
 import passwordMobile from '../../styles/mobileSideBar.module.css'
 import TopNavBar from '../../Components/TopNavbar';
-import passworddetails from '../../Styles/profile.module.css';
+import passworddetails from '../../styles/profile.module.css';
 import {useState, useEffect } from "react";
-import passwordcss from '../../Styles/dashboard.module.css';
+import passwordcss from '../../styles/dashboard.module.css';
 import {faEye, faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {server} from '../../Config/index'

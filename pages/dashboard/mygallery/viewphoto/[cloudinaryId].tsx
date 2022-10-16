@@ -1,14 +1,11 @@
-import css from '../../../../Styles/dashboard.module.css';
-import details from '../../../../Styles/profile.module.css';
+import css from '../../../../styles/dashboard.module.css';
+import details from '../../../../styles/profile.module.css';
 import mobile from '../../../../styles/mobileSideBar.module.css'
 import StudentSideBar from '../../../../Components/StudentSideBar';
 import TopNavBar from '../../../../Components/TopNavbar';
 import {useState, useEffect } from "react";
-import {server} from '../../../../Config/index'
 import { useRouter} from 'next/router'
 import {userAuth} from "../../../../Contexts/AllContext"
-
-
 
 const ViewPhoto = () => {
     const router = useRouter()
