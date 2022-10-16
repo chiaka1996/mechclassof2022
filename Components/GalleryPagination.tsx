@@ -1,4 +1,4 @@
-import paginate from '../Styles/profile.module.css';
+import paginate from '../styles/profile.module.css';
 
 interface pic{
     cloudinaryId: string,

@@ -1,4 +1,4 @@
-import sidebar from '../Styles/sidebar.module.css';
+import sidebar from '../styles/sidebar.module.css';
 import Link from 'next/link';
 import {userAuth} from "../Contexts/AllContext"
 import  { useRouter } from 'next/router'

@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import pagination from '../Styles/profile.module.css';
+import pagination from '../styles/profile.module.css';
 
 interface pic{
     cloudinaryId: string,

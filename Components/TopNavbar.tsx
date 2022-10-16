@@ -1,4 +1,4 @@
-import top from '../Styles/topNavbar.module.css';
+import top from '../styles/topNavbar.module.css';
 import {userAuth} from "../Contexts/AllContext"
 
 interface props{

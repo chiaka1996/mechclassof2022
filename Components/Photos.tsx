@@ -1,4 +1,4 @@
-import photo from '../Styles/Photos.module.css';
+import photo from '../styles/Photos.module.css';
 
 const Photos = () => {
     return(
