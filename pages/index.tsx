@@ -81,8 +81,8 @@ const Home = ({data}:homeprops) => {
           <div className='BannerHeading'>
             <div className='bigHeader'>MECHANICAL ENGINEERING</div>
             <div className='bigHeader'>CLASS OF 2022(PT)</div>
-           <div className='mallHeader'>NA WHO GIVE UP,</div>
-           <div className='mallHeader'>FUCK UP! </div>  
+           <div className='smallHeader'>NA WHO GIVE UP,</div>
+           <div className='smallHeader'>FUCK UP! </div>  
           
           <Link href='/pictures/1'>
            <button className='gallery'>
