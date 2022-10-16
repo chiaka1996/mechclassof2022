@@ -1,4 +1,4 @@
-import log from '../Styles/Login.module.css';
+import log from '../styles/Login.module.css';
 import {useState, useEffect} from "react";
 import { useRouter } from 'next/router'
 import Link from 'next/link'
