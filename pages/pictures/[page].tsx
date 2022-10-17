@@ -43,7 +43,7 @@ const Gallery = () => {
              limit: 10
            }
 
-           let apiRequest = await fetch(`${server}/api/getallphotos`,{
+           let apiRequest = await fetch(`../api/getallphotos`,{
              method: "POST",
              body: JSON.stringify(data),
              headers: {
