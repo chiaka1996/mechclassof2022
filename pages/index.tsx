@@ -69,7 +69,7 @@ const Home = ({data}:homeprops) => {
                 {surname}
                 </div>
                 </Link> :
-              <Link href='/Login'>
+              <Link href='/Login' style={{cursor: 'pointer'}}>
               <div className='Login'>Login</div>
               </Link>
 }
