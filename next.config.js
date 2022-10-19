@@ -13,3 +13,9 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
 }
+
+module.exports = {
+  images: {
+    domains: ["img.icons8.com", "res.cloudinary.com"],
+  },
+}

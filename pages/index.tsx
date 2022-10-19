@@ -1,8 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import Link from 'next/link';
 import {server} from '../Config/index'
 import {userAuth} from "../Contexts/AllContext"
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+import Carousel from 'react-bootstrap/Carousel';
 
 interface homeprops {
   data: {
@@ -30,7 +33,6 @@ interface profiler {
 
 const Home = ({data}:homeprops) => {
   const {loggedIn,profile} = userAuth()
-  console.log(loggedIn)
   const {_id , surname} = profile
   const router = useRouter()
 
@@ -44,7 +46,6 @@ const Home = ({data}:homeprops) => {
   }
   
   return (
-    // <div className={styles.container}>
     <div>
       <Head>
         <title>Yabatech College of Techn ology, Mechanical Engineering set of 2022 part time website</title>
@@ -62,11 +63,13 @@ const Home = ({data}:homeprops) => {
             <div>
               { surname ? <Link href='/dashboard'>
                  <div className='loginName'>
-                <img 
+              <Image
                 src="https://img.icons8.com/material-rounded/24/000000/person-male.png"
-                alt='person'
-                />
-                {surname}
+                alt="person"
+                width={20}
+                height={20}
+                  />
+                <div>{surname}</div>
                 </div>
                 </Link> :
               <Link href='/Login' style={{cursor: 'pointer'}}>
@@ -87,23 +90,27 @@ const Home = ({data}:homeprops) => {
           <Link href='/pictures/1'>
            <button className='gallery'>
             <span>Gallery</span>
-            <img 
+            <div className='galleryImageDiv'>
+            <Image
             src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/24/ffffff/external-arrow-arrow-line-royyan-wijaya-detailed-outline-royyan-wijaya-13.png"
-            alt='white arrow'
+            alt="arrow"
+            width={20}
+            height={20}
             />
+            </div>
            </button>
            </Link>
            
           </div> 
           <div>
             <div className='gridBannerImg'>
-             <img 
-            src='https://res.cloudinary.com/chiaka/image/upload/v1661193783/me3nlmqwy9izyeuq9h5l.jpg'
+            <img 
+            src='https://res.cloudinary.com/chiaka/image/upload/v1666196649/mr.patrick_hnccqs.jpg'
             alt='banner image'
             className='gridImg'
             />
             <img 
-            src='https://res.cloudinary.com/chiaka/image/upload/v1661193182/zl3wmovoayhpqq2dgeto.jpg'
+            src='https://res.cloudinary.com/chiaka/image/upload/v1666196664/savior_dance_p6jxhf.jpg'
             alt='banner image'
             className='gridImg'
             />
@@ -113,11 +120,48 @@ const Home = ({data}:homeprops) => {
             className='gridImg'
             />
             </div>
-            <img 
-            src='https://res.cloudinary.com/chiaka1996/image/upload/v1658609043/mechanical_eng_banner2_d0m51n.jpg'
-            alt='banner image'
-            className='bannerImg'
-            />
+      <div className='gridBannerImg2'>
+      <Carousel fade>
+      <Carousel.Item>
+        <img
+          className="gridImg"
+          src="https://res.cloudinary.com/chiaka/image/upload/v1666196490/ekene_jubril_rxwevm.jpg"
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="gridImg"
+          src="https://res.cloudinary.com/chiaka/image/upload/v1666196531/3wiseladies_ain43j.jpg"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="gridImg"
+          src="https://res.cloudinary.com/chiaka/image/upload/v1661193783/me3nlmqwy9izyeuq9h5l.jpg"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+    </Carousel>
+
+    <Carousel fade>
+      <Carousel.Item>
+        <img
+          className="bannerImg"
+          src="https://res.cloudinary.com/chiaka/image/upload/v1665289795/DSC_6649_ox6uz4.jpg"
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="bannerImg"
+          src="https://res.cloudinary.com/chiaka1996/image/upload/v1658609043/mechanical_eng_banner2_d0m51n.jpg"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+    </Carousel>
+    </div>
           </div>
         </div> 
 
@@ -142,6 +186,8 @@ const Home = ({data}:homeprops) => {
           </div>
 
         </section>
+
+       
       </main>
 
       <footer className='footer'>
