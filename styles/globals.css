@@ -105,7 +105,9 @@
     border-radius: 5%;
 }
 
-
+.galleryImageDiv{
+    padding: 2% 0 0 0;
+}
 
 .gallery{
     background-color:  #e49629;
