@@ -81,7 +81,6 @@ const Home = ({data}:homeprops) => {
             </div>
           </nav>
         <div className='banner'>
-
           <div className='BannerHeading'>
             <div className='animate__animated animate__backInDown'>
             <div className='bigHeader'>MECHANICAL ENGINEERING</div>

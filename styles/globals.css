@@ -19,6 +19,7 @@
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     background-color:#fffbf5;
+    z-index: 200000;
 }
 
 .logoName{
@@ -51,7 +52,8 @@
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-between;
-    padding: 0 5% 1% 5%
+    padding: 0 5% 1% 5%;
+    z-index: -500;
 }
 
 .BannerHeading{
@@ -62,15 +64,18 @@
     letter-spacing: 3px;
     font-weight: bold;
     margin: 0 0 10% 0;
+    z-index: -500;
 }
 
 .bigHeader{
     color: #b47114;
+    z-index: -500;
 }
 
 .smallHeader{
     color: rgb(77, 83, 77);
     font-size: 0.5em;
+    z-index: -500;
 }
 
 .gridBannerImg{
@@ -79,6 +84,7 @@
     justify-content: space-between;
     height: 40vh;
     margin: 3% 0 2% 0;
+    z-index: -500;
 }
 
 .gridBannerImg2{
@@ -87,15 +93,16 @@
     justify-content: space-between;
     height: 40vh;
     margin: 0 0 2% 0;
+    z-index: -500;
    
 
 }
-
 
 .gridImg{
     width: 100%;
     height: 40vh;
     border-radius: 5%;
+    z-index: -500;
 }
 
 
@@ -103,6 +110,7 @@
     width: 100%;
     height: 40vh;
     border-radius: 5%;
+    z-index: -500;
 }
 
 .galleryImageDiv{
@@ -225,18 +233,24 @@
     }
 
     .studentSection{
-        margin: 10% 0 0 0;
+        margin: 5% 0 0 0;
+    }
+
+    .bigHeader{
+        color: #b47114;
+        font-size: 0.87em;
     }
 
     @media only screen and (max-width: 380px) {
         .studentSection{
-            margin: 20% 0 0 0;
+            margin: 13% 0 0 0;
         }
 
         .bigHeader{
             color: #b47114;
-            font-size: 0.9em;
+            font-size: 0.77em;
         }
+    
 
         .BannerHeading{
             padding: 14% 0 0 0;
@@ -244,8 +258,6 @@
         }
     
     }
-
-
 
     .comradeGrid{
         grid-template-columns: 48% 48%;
