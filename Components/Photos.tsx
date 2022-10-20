@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import photo from '../styles/Photos.module.css';
 
 const Photos = () => {

@@ -6,6 +6,7 @@ import {userAuth} from "../Contexts/AllContext"
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Carousel from 'react-bootstrap/Carousel';
+import 'animate.css'
 
 interface homeprops {
   data: {
@@ -82,6 +83,7 @@ const Home = ({data}:homeprops) => {
         <div className='banner'>
 
           <div className='BannerHeading'>
+            <div className='animate__animated animate__backInDown'>
             <div className='bigHeader'>MECHANICAL ENGINEERING</div>
             <div className='bigHeader'>CLASS OF 2022(PT)</div>
            <div className='smallHeader'>NA WHO GIVE UP,</div>
@@ -100,27 +102,28 @@ const Home = ({data}:homeprops) => {
             </div>
            </button>
            </Link>
-           
+           </div>
           </div> 
           <div>
             <div className='gridBannerImg'>
             <img 
             src='https://res.cloudinary.com/chiaka/image/upload/v1666196649/mr.patrick_hnccqs.jpg'
             alt='banner image'
-            className='gridImg'
+            className='gridImg animate__animated animate__backInUp animate__delay-4s'
             />
             <img 
             src='https://res.cloudinary.com/chiaka/image/upload/v1666196664/savior_dance_p6jxhf.jpg'
             alt='banner image'
-            className='gridImg'
+            className='gridImg animate__animated animate__backInUp animate__delay-3s'
             />
             <img 
             src='https://res.cloudinary.com/chiaka/image/upload/v1661193316/xn37e773ch3ifmkifzvl.jpg'
             alt='banner image'
-            className='gridImg'
+            className='gridImg animate__animated animate__backInUp animate__delay-2s'
             />
             </div>
       <div className='gridBannerImg2'>
+      <div className='gridImg animate__animated animate__backInUp animate__delay-1s'>
       <Carousel fade>
       <Carousel.Item>
         <img
@@ -144,7 +147,8 @@ const Home = ({data}:homeprops) => {
         />
       </Carousel.Item>
     </Carousel>
-
+    </div>
+    <div className='animate__animated animate__backInUp'>
     <Carousel fade>
       <Carousel.Item>
         <img
@@ -161,6 +165,7 @@ const Home = ({data}:homeprops) => {
         />
       </Carousel.Item>
     </Carousel>
+    </div>
     </div>
           </div>
         </div> 
