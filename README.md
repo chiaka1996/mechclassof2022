@@ -56,3 +56,6 @@ https://chiaka-daniel-nextjs-test.vercel.app/
     "typescript": "^4.8.4"
   }
 
+## LOGIN DETAILS
+Matric NO: p/hd/19/3440020
+password: osuji
