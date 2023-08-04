@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### WEB BASED STUDENT YEAR BOOK
+
+This is a web based student year book, that allows students of a class share beautiful memories of themselves, and comment beautiful things on one anothers profile.
 
 ## Getting Started
 
@@ -18,17 +20,39 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
+App is depoyed on vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Link
+https://chiaka-daniel-nextjs-test.vercel.app/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Dependencies
+"dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "animate.css": "^4.1.1",
+    "bcrypt": "^5.1.0",
+    "bootstrap": "^5.2.2",
+    "cloudinary": "^1.32.0",
+    "form-data": "^4.0.0",
+    "formidable": "^2.0.1",
+    "mongoose": "^6.6.5",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/node": "^18.8.5",
+    "@types/react": "^18.0.21",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1",
+    "jest": "^29.2.1",
+    "jest-environment-jsdom": "^29.2.1",
+    "typescript": "^4.8.4"
+  }
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
